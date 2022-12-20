@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Christmas Buzz
+## Little Dicegame for Christmas
+A little dice game, created for Christmas Eve.
+Written to work woth the PS2 Buzz Buzzers.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## GamePlay
+### Select Players
+Each player kan toggle if they are joing with the big red button on the Buzzer.
+When everyone is set, the gameleader can confirm and start the maingame with Enter
+### The Game
+Everyone gets 3 throws. Throwing is done with the big red button.
+Locking dice happens with the colored buttons.
+After 3 throws als dice are locked, so the score can be confirmed.
+### Scoring
+Scoring is as follows:
+No equal dice or sequence: 1 point (eg. 1-2-4-6)
+2 equal dice: 20 points (eg. 1-1-4-5)
+2 pairs : 25 points (eg. 2-2-4-4)
+3 equal dice : 30 points (eg. 6-6-6-5)
+3 sequential dice: 35 points (eg. 2-3-4-6)
+4 equal dice: 40 points (eg. 3-3-3-3)
+4 sequential dice : 50 points (eg. 3-4-5-6)
 
-## Available Scripts
+When 2 players have the same amount of points, the player with the highest total throw wins.
+Beware! When a player keeps hitting the throw-button after their 3 throws, one point is subtracted from the total score!
 
-In the project directory, you can run:
+The gameleader can reset the dice, and start a new round by pressing the Enter button. Warning: nor warning or check happens to reset the dice.
+### Full Restart
+Just refresh the webpage, and the Player Selection will appear.
 
-### `yarn start`
+## Buzzers
+I configured the Buzzers with https://joytokey.net/en/.
+The configuration file is in the Joy2KeySettings folder, and also listed here (KeyMapping also works on a normal KeyBoard, for testing and developing purposes)
+The "Admin" buttons is Enter, so the gameleader can use a regular keyboard to confirm the players, and reset the game.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Buzzer 1:
+Red Button : Digit1
+Blue Button : KeyQ
+Orange Button : KeyW
+Green Button : KeyE
+Green Button : KeyR
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Buzzer 2:
+Red Button : Digit2
+Blue Button : KeyA
+Orange Button : KeyS
+Green Button : KeyD
+Green Button : KeyF
 
-### `yarn test`
+Buzzer 3:
+Red Button : Digit9
+Blue Button : KeyU
+Orange Button : KeyI
+Green Button : KeyO
+Green Button : KeyP
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Buzzer 4:
+Red Button : Digit0
+Blue Button : KeyH
+Orange Button : KeyJ
+Green Button : KeyK
+Green Button : KeyL
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Aditional info:
+ - styling done with Semantic UI React
+ - Christmas Icons from [https://www.favicon.cc/?action=icon&file_id=694289 ](https://iconarchive.com/show/christmas-flat-color-icons-by-icons8/christmas-tree-icon.html)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Disclaimer
+Not the cleanest code, but it works... This game was intended for personal use, and was developed quick and dirty
