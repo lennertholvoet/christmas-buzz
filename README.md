@@ -3,6 +3,8 @@
 A little dice game, created for Christmas Eve.
 Written to work woth the PS2 Buzz Buzzers.
 
+Testversion available at https://denstylo.be/ChristmasBuzz
+
 ## GamePlay
 ### Select Players
 Each player kan toggle if they are joing with the big red button on the Buzzer.
